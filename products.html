@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | BALAJI UPVC WINDOW AND DOORS</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f8fb;
+}
+
+header{
+    background:#0a3d62;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    margin:0;
+    font-size:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00a8ff;
+}
+
+.section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:32px;
+    color:#0a3d62;
+    margin-bottom:40px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    padding:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.price{
+    font-size:18px;
+    color:#0a3d62;
+    margin:10px 0;
+}
+
+.discount{
+    color:red;
+    font-weight:bold;
+}
+
+button{
+    background:#0a3d62;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#00a8ff;
+}
+
+footer{
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>BALAJI UPVC WINDOW AND DOORS</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h2>Our Premium Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Sliding Window">
+            <h3>Sliding Windows</h3>
+            <p class="price">Starting ₹350/sqft</p>
+            <p class="discount">10% OFF</p>
+            <p>Modern smooth sliding windows with high durability.</p>
+            <button onclick="order()">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Casement Window">
+            <h3>Casement Windows</h3>
+            <p class="price">Starting ₹400/sqft</p>
+            <p class="discount">12% OFF</p>
+            <p>Stylish openable windows with strong locking system.</p>
+            <button onclick="order()">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Sliding Door">
+            <h3>Sliding Doors</h3>
+            <p class="price">Starting ₹550/sqft</p>
+            <p class="discount">15% OFF</p>
+            <p>Premium finish sliding doors for modern homes.</p>
+            <button onclick="order()">Order Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Designer Door">
+            <h3>Designer UPVC Doors</h3>
+            <p class="price">Starting ₹700/sqft</p>
+            <p class="discount">18% OFF</p>
+            <p>Elegant and luxury designer UPVC doors collection.</p>
+            <button onclick="order()">Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 BALAJI UPVC WINDOW AND DOORS | pradeepsen.github.io
+</footer>
+
+<script>
+function order(){
+    window.open("https://forms.gle/your-google-form-link","_blank");
+}
+</script>
+
+</body>
+</html>
